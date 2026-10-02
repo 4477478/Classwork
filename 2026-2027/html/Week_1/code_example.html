@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The New Practice</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f3e4ce;
+            color: #2b2118;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #8b1e1e;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 17px;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background: #30251d;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 45px;
+
+            list-style: none;
+            margin: 0;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e7b96b;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 35px;
+
+            background: #fffaf3;
+            padding: 30px;
+            border-radius: 12px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        article h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+
+            color: #7b1e1e;
+            font-size: 30px;
+            line-height: 1.2;
+        }
+
+        article p {
+            color: #59483a;
+            font-size: 17px;
+        }
+
+        /* Images */
+        figure {
+            margin: 0;
+        }
+
+        figure img,
+        aside img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        figure img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        aside {
+            display: flex;
+            align-items: center;
+        }
+
+        aside img {
+            max-height: 450px;
+            object-fit: cover;
+        }
+
+        /* Caption */
+        figcaption {
+            margin-top: 10px;
+            color: #766354;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            background: #30251d;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            header {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            main {
+                margin: 25px auto;
+            }
+
+            article {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            article h2 {
+                font-size: 25px;
+            }
+
+            aside img {
+                max-height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>The New Practice</h1>
+    <p>Stories from the woods</p>
+</header>
+
+<nav>
+    <ul>
+        <li>
+            <a href="#">Forest</a>
+        </li>
+
+        <li>
+            <a href="#">House</a>
+        </li>
+
+        <li>
+            <a href="#">Smile</a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+
+    <article>
+
+        <div>
+            <h2>
+                The Mad Man in the Woods Who Cut Almost a Forest by Himself
+            </h2>
+
+            <figure>
+                <picture>
+                    <img
+                            src="images.jpeg"
+                            alt="A forest filled with trees">
+                </picture>
+
+                <figcaption>
+                    The forest where the story took place.
+                </figcaption>
+            </figure>
+
+            <p>
+                Deep in the woods, one man began cutting trees almost
+                entirely by himself. What started as a simple task became
+                a remarkable story that caught the attention of everyone
+                around him.
+            </p>
+        </div>
+
+        <aside>
+            <img
+                    src="images%20(1).jpeg"
+                    alt="Wood from the forest">
+        </aside>
+
+    </article>
+
+</main>
+
+<footer>
+    <p>He was cutting all the trees.</p>
+</footer>
+
+</body>
+
+</html>
